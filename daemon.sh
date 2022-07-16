@@ -44,4 +44,8 @@ else
    echo "PREFIX is set"
 fi
 
-bash do_backup.sh
+while true
+do
+  bash do_backup.sh
+  sleep "$SLEEP"
+done
